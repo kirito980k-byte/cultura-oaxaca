@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Comidas Típicas de Oaxaca</title>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+ 
+    body {
+      font-family: 'Raleway', sans-serif;
+      background: linear-gradient(180deg, #FF8FA3 0%, #FFF0F3 100%);
+      color: #590D22;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+ 
+    header {
+      background-color: #800F2F;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+ 
+    header h1 {
+      font-size: 2.5rem;
+    }
+ 
+    header p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+ 
+    main {
+      flex: 1;
+      padding: 40px 5vw;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+ 
+    .platillo {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+ 
+    .platillo:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    }
+ 
+    .platillo img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+ 
+    .platillo-content {
+      padding: 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+ 
+    .platillo h2 {
+      color: #800F2F;
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+    }
+ 
+    .platillo p {
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+    }
+ 
+    footer {
+      background-color: #800F2F;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95rem;
+    }
+ 
+    .boton-principal {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #FFB3C1;
+      color: #800F2F;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+ 
+    .boton-principal:hover {
+      background-color: #FF4D6D;
+      color: white;
+    }
+ 
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+</style>
+</head>
+<body>
+ 
+  <header>
+<h1>Comidas Típicas de Oaxaca</h1>
+<p>Una muestra de la riqueza gastronómica del estado</p>
+</header>
+ 
+  <main>
+<section class="platillo">
+<img src="mole.jpg" alt="Mole Oaxaqueño">
+<div class="platillo-content">
+<h2>Mole Oaxaqueño</h2>
+<p>El mole negro es uno de los platillos más complejos de México. Se prepara con más de 30 ingredientes, incluyendo chiles y chocolate.</p>
+</div>
+</section>
+ 
+    <section class="platillo">
+<img src="tlayudas.jpg" alt="Tlayudas">
+<div class="platillo-content">
+<h2>Tlayudas</h2>
+<p>Tortilla grande con asiento, frijoles, quesillo, aguacate, salsa y carne. Representa la comida callejera oaxaqueña.</p>
+</div>
+</section>
+ 
+    <section class="platillo">
+<img src="chapulines.jpg" alt="Chapulines">
+<div class="platillo-content">
+<h2>Chapulines</h2>
+<p>Saltamontes tostados con limón, ajo y sal. Crujientes y ricos en proteínas, muy tradicionales en Oaxaca.</p>
+</div>
+</section>
+ 
+    <section class="platillo">
+<img src="quesillo.jpg" alt="Quesillo">
+<div class="platillo-content">
+<h2>Quesillo (Queso Oaxaca)</h2>
+<p>Queso fibroso enrollado, ideal para quesadillas y tlayudas. Suave, fresco y muy característico.</p>
+</div>
+</section>
+ 
+    <section class="platillo">
+<img src="memelas.jpg" alt="Memelas">
+<div class="platillo-content">
+<h2>Memelas</h2>
+<p>Tortillas gruesas con frijoles, salsa, queso fresco o quesillo. Se sirven con carne, huevo o nopal.</p>
+</div>
+</section>
+ 
+    <section class="platillo">
+<img src="tamales.jpg" alt="Tamales Oaxaqueños">
+<div class="platillo-content">
+<h2>Tamales Oaxaqueños</h2>
+<p>Hechos en hoja de plátano, suaves y rellenos de mole con carne. Se acompañan con atole en festividades.</p>
+</div>
+</section>
+ 
+    <section class="platillo">
+<img src="tasajo_cecina.jpg" alt="Tasajo y Cecina">
+<div class="platillo-content">
+<h2>Tasajo y Cecina Enchilada</h2>
+<p>Carne de res o cerdo cocinada al comal. Se sirve con arroz, frijoles o tlayudas. Muy sabrosos y típicos.</p>
+</div>
+</section>
+ 
+    <section class="platillo">
+<img src="mezcal.jpg" alt="Mezcal">
+<div class="platillo-content">
+<h2>Mezcal</h2>
+<p>Bebida artesanal destilada del maguey. Se toma sola, con sal de gusano y naranja. Símbolo cultural de Oaxaca.</p>
+</div>
+</section>
+</main>
+ 
+  <footer>
+<a href="CULTURAS DE OAXACA.html" class="boton-principal">Ir a la Página Principal</a>
+</footer>
+ 
+</body>
+</html>

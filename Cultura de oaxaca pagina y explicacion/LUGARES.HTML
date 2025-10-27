@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Oaxaca - Página Principal</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom, #fff8f0, #fce4d6);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #590D22;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+            font-style: italic;
+        }
+        /* ESTILO PARA EL NUEVO BOTÓN/ENLACE */
+        #btnPaginaInicial {
+            display: block;
+            margin: 30px auto;
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #FF4D6D;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease;
+            text-decoration: none; /* Importante para enlaces */
+            width: fit-content; /* Para que el fondo solo cubra el texto */
+        }
+        #btnPaginaInicial:hover {
+            transform: scale(1.05);
+            background-color: #FF8FA3;
+        }
+        /* Los lugares se muestran por defecto ahora */
+        .lugares {
+            display: block; /* Cambiado de 'none' a 'block' para que se vea */
+            margin: 30px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .lugar {
+            display: inline-block;
+            width: auto;
+            max-width: 320px;
+            margin: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            vertical-align: top;
+            text-align: center;
+        }
+        .lugar:hover {
+            transform: translateY(-5px);
+        }
+        .lugar img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+        .lugar h3 {
+            color: #C9184A;
+            margin-top: 15px;
+            font-size: 1.5em;
+        }
+        .lugar p {
+            font-size: 1em;
+            color: #333;
+        }
+        /* Se eliminó el estilo para #regresarBtn y @keyframes fadeIn */
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Oaxaca</h1>
+        <p>Explora sus lugares mágicos</p>
+    </header>
+ 
+    <a href="CULTURAS DE OAXACA.html" id="btnPaginaInicial">Ir a la Página Inicial de la Web</a>
+ 
+    <div id="lugares" class="lugares">
+        <div class="lugar">
+            <img src="Monte Albán.jpg" alt="Monte Albán">
+            <h3>Monte Albán</h3>
+            <p>Zona arqueológica zapoteca ubicada en lo alto de una montaña. Patrimonio Mundial de la UNESCO.</p>
+        </div>
+        <div class="lugar">
+            <img src="Mitla.jpg" alt="Mitla">
+            <h3>Mitla</h3>
+            <p>Centro ceremonial zapoteca, famoso por sus grecas talladas en piedra.</p>
+        </div>
+        <div class="lugar">
+            <img src="san jose del pacifico.jpg" alt="San José del Pacífico">
+            <h3>San José del Pacífico</h3>
+            <p>Pueblo mágico ideal para ecoturismo y meditación entre las nubes.</p>
+        </div>
+        <div class="lugar">
+            <img src="Mazunte.jpg" alt="Mazunte">
+            <h3>Mazunte</h3>
+            <p>Playa tranquila y ecológica, hogar del Centro Mexicano de la Tortuga.</p>
+        </div>
+        <div class="lugar">
+            <img src="Puerto Escondido.jpg" alt="Puerto Escondido">
+            <h3>Puerto Escondido</h3>
+            <p>Destino internacional para surfistas, con playas como Zicatela y Carrizalillo, además de vida nocturna vibrante.</p>
+        </div>
+        <div class="lugar">
+            <img src="Tlacolula de Matamoros.jpg" alt="Tlacolula de Matamoros">
+            <h3>Tlacolula de Matamoros</h3>
+            <p>Famoso por su mercado dominical, donde se mezclan productos indígenas, gastronomía y tradiciones vivas.</p>
+        </div>
+        <div class="lugar">
+            <img src="Teotitlán del Valle.jpg" alt="Teotitlán del Valle">
+            <h3>Teotitlán del Valle</h3>
+            <p>Pueblo zapoteco especializado en tapetes tejidos con tintes naturales y diseños ancestrales.</p>
+        </div>
+        <div class="lugar">
+            <img src="Santa María del Tule.jpg" alt="Santa María del Tule">
+            <h3>Santa María del Tule</h3>
+            <p>Aquí se encuentra el árbol con el tronco más ancho del mundo, un ahuehuete de más de 2,000 años.</p>
+        </div>
+        <div class="lugar">
+            <img src="Yagul.jpg" alt="Yagul">
+            <h3>Yagul</h3>
+            <p>Zona arqueológica con palacios, patios y un juego de pelota prehispánico en los Valles Centrales.</p>
+        </div>
+        <div class="lugar">
+            <img src="Zipolite.jpg" alt="Zipolite">
+            <h3>Playa Zipolite</h3>
+            <p>Playa nudista y bohemia, famosa por su ambiente relajado y atardeceres espectaculares.</p>
+        </div>
+        <div class="lugar">
+            <img src="Hierve el Agua.jpg" alt="Hierve el Agua">
+            <h3>Hierve el Agua</h3>
+            <p>Formaciones rocosas que parecen cascadas petrificadas. Cuenta con pozas naturales donde puedes nadar rodeado de paisajes únicos.</p>
+        </div>
+    </div>
+ 
+    </body>
+</html>

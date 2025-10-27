@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vestimentas típicas de Oaxaca</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif; line-height:1.6; margin:20px;">
+
+  <header style="text-align:center; margin-bottom:24px;">
+    <h1 style="margin-bottom:6px;">Vestimentas típicas de Oaxaca</h1>
+    <p style="max-width:800px; margin:0 auto;">
+      Oaxaca es uno de los estados con mayor riqueza cultural de México. Sus trajes regionales,
+      tejidos y bordados reflejan la historia, las comunidades indígenas y las celebraciones
+      locales. A continuación se describen cuatro prendas representativas de distintas regiones.
+    </p>
+  </header>
+
+
+  <main style="max-width:900px; margin:0 auto;">
+    <!-- 1 -->
+    <article style="margin-bottom:18px; padding:12px; border-bottom:1px solid #ddd;">
+      <h2 style="margin:0 0 8px 0;">1. Traje de la Tehuana (Istmo de Tehuantepec)</h2>
+      <p>
+        El traje tehuana es uno de los más emblemáticos de Oaxaca. Lo usan las mujeres del Istmo
+        y se compone de un huipil ricamente bordado y una enagua, ambos con motivos florales y geométricos.
+        El peinado suele llevar trenzas decoradas con listones y flores, y a menudo se complementa
+        con un rebozo y joyería de filigrana o cuentas. Este atuendo tiene una fuerte presencia
+        en la Guelaguetza y en celebraciones locales.
+      </p>
+    </article>
+
+    <!-- 2 -->
+    <article style="margin-bottom:18px; padding:12px; border-bottom:1px solid #ddd;">
+	<img src="traje costa" alt="Traje de la costa" style="width:100%; height:300px; object-fit:cover;">
+      <h2 style="margin:0 0 8px 0;">2. Traje de la región de la Costa</h2>
+      <p>
+        En la Costa de Oaxaca se observan blusas de corte sencillo y faldas amplias llamadas enaguas,
+        a menudo en colores vivos y con volantes. Los bordados pueden incluir motivos marinos o florales.
+        Las mujeres suelen usar collares y arreglos en el cabello; los materiales empleados buscan ser
+        frescos por el clima cálido de la región.
+      </p>
+    </article>
+
+    <!-- 3 -->
+    <article style="margin-bottom:18px; padding:12px; border-bottom:1px solid #ddd;">
+      <h2 style="margin:0 0 8px 0;">3. Trajes de la Sierra (ej. trajes chinantecos o mixtecos)</h2>
+      <p>
+        En las zonas serranas se encuentran huipiles y vestidos con bordados finos realizados a mano,
+        textiles de lana o algodón y paletas de color que varían según la comunidad. Los diseños
+        pueden incorporar símbolos ancestrales y técnicas de tejido tradicionales que se transmiten
+        entre generaciones.
+      </p>
+    </article>
+
+    <!-- 4 -->
+    <article style="margin-bottom:18px; padding:12px; border-bottom:1px solid #ddd;">
+      <h2 style="margin:0 0 8px 0;">4. Traje masculino tradicional</h2>
+      <p>
+        El traje tradicional para hombres en varias regiones incluye una camisa blanca de algodón,
+        pantalón claro, faja bordada y sombrero. En celebraciones o danzas se complementa con
+        pañuelo al cuello, calzado especial y, en algunos casos, chaleco bordado. La sencillez y
+        los acabados varían según la región y la ocasión.
+      </p>
+    </article>
+
+</body>
+</html>

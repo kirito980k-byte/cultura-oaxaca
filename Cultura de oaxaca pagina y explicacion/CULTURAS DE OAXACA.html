@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Riqueza Cultural de Oaxaca</title>
+ 
+   
+ 
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Fondo con gradiente usando colores de la paleta: Rosa a Rojo oscuro */
+            background: linear-gradient(180deg, #FFB3C1, #A4133C, #C9184A);
+            color: #1a1a1a;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+ 
+        /* TÍTULO PRINCIPAL (Header Section) */
+        header {
+            width: 100%;
+            background-color: #590D22; /* Rojo oscuro para el fondo del encabezado */
+            color: #FFF0F3; /* Blanco muy claro */
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        .main-title {
+            color: #FF758F; /* Rojo/Rosa claro para el título con estrellas */
+            font-family: 'Arial', sans-serif; /* Usamos Arial o Satisfy para el título principal */
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            color: #FFCCD5; /* Rojo fuerte solicitado */
+            font-size: 1.2em;
+            margin-top: 5px;
+        }
+ 
+        /* Contenedor principal del contenido */
+        .container {
+            width: 95%;
+            max-width: 1100px;
+            margin: 0 auto 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+ 
+        /* BOTÓN PRINCIPAL: Explorar las Raíces */
+        .btn-principal {
+            background-color: #A4133C;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin: 20px 0;
+            transition: background-color 0.3s ease;
+        }
+        .btn-principal:hover {
+            background-color: #C9184A;
+        }
+        
+        /* SUBMENÚ DE BOTONES */
+        .submenu-botones {
+            display: none;
+            text-align: center;
+            margin-top: 15px;
+            padding: 20px 10px;
+            border: 2px dashed #FF4D6D;
+            border-radius: 10px;
+            background-color: #FFCCD5;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+ 
+        /* BOTONES SECUNDARIOS (los 5 principales) */
+        .sub-button {
+            background-color: #800F2F;
+            color: WHITE;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 8px;
+            font-size: 1.1em;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .sub-button:hover {
+            background-color: #FF758F;
+            transform: translateY(-2px);
+        }
+        
+        /* Título secundario de la tabla de contenido */
+        h1 {
+            color: #590D22;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #FF4D6D;
+            padding-bottom: 10px;
+        }
+        
+        /* TABLA de Información General */
+        .tabla-principal {
+            width: 100%;
+            margin: 30px 0 10px 0;
+            border-collapse: separate;
+            border-spacing: 0;
+            background-color: #FFCCD5;
+            color: #590D22;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .tabla-principal thead {
+            background-color: #C9184A;
+            color: white;
+            font-size: 1.2em;
+        }
+        .tabla-principal th {
+            padding: 15px;
+            text-align: center;
+        }
+        .tabla-principal td {
+            padding: 20px;
+            font-size: 1em;
+            vertical-align: top;
+            border-top: 1px solid #FF8FA3;
+        }
+        .tabla-principal .gif-cell {
+            text-align: center;
+            width: 35%;
+        }
+        .tabla-principal img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        /* Botón de Música Fijo */
+        .music-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #FF4D6D;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+        .music-button:hover {
+            background-color: #C9184A;
+        }
+    </style>
+</head>
+<body>
+ 
+    <audio id="audioPlayer" src="music.mp3" type="audio/mpeg" loop></audio>
+    <button onclick="toggleMusic()" class="music-button" id="musicBtn">
+        Reproducir Música
+    </button>
+    
+    <header>
+        <span class="main-title">🌟 La Riqueza Cultural de Oaxaca 🌟</span>
+        <p class="subtitle">Tradición, Historia y Sabor en el Corazón de México</p>
+    </header>
+ 
+    <div class="container">
+        
+        <button class="btn-principal" onclick="toggleMainSubmenu()">
+            Explorar las Raíces de Oaxaca
+        </button>
+ 
+        <div id="main-submenu" class="submenu-botones">
+
+            <button class="sub-button" onclick="window.location.href='BAILES.HTML'">Danzas y Bailes 💃</button>
+            <button class="sub-button" onclick="window.location.href='MUSIC.HTML'">Música Tradicional 🎶</button>
+            <button class="sub-button" onclick="window.location.href='Vestimentas.HTML'">Vestimenta Típica 👘</button>
+            <button class="sub-button" onclick="window.location.href='COMIDAS.HTML'">Gastronomía y Comidas 🍽️</button>
+            <button class="sub-button" onclick="window.location.href='LUGARES.HTML'">Lugares Turísticos 🏞️</button>
+ 
+        </div>
+        
+        <h1>IMPORTANCIA DE LA CULTURA DE OAXACA</h1>
+        
+        <table class="tabla-principal">
+            <thead>
+                <tr>
+                    <th colspan="2">Concepto:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        La Cultura de Oaxaca es un reflejo de la rica diversidad étnica y cultural de la región. Las festividades y tradiciones oaxaqueñas son un testimonio de su patrimonio cultural, donde la fusión de tradiciones indígenas y españolas ha dado lugar a una identidad única. Las celebraciones como la Guelaguetza y el Día de los Muertos son ejemplos destacados de cómo Oaxaca conserva y promueve su herencia cultural. La gastronomía, el arte y la artesanía son aspectos fundamentales de la cultura oaxaqueña, cada uno con su propio estilo y significado.
+                    </td>
+                    <td class="gif-cell">
+                        <img src="bai.gif" alt="Mapa de Oaxaca" width="250" height="250">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+ 
+    </div>
+ 
+    <script>
+        // Función para el botón principal (Explorar las Raíces de Oaxaca)
+        function toggleMainSubmenu() {
+            const submenu = document.getElementById('main-submenu');
+            const mainButton = document.querySelector('.btn-principal');
+            
+            // Usamos style.display === "flex" porque así está definido en el CSS
+            if (submenu.style.display === "flex") {
+                submenu.style.display = "none";
+                mainButton.textContent = 'Explorar las Raíces de Oaxaca';
+            } else {
+                submenu.style.display = "flex";
+                mainButton.textContent = 'Ocultar Opciones';
+            }
+        }
+ 
+        // Función para los 5 botones principales (simula la navegación)
+        function goToSection(sectionName) {
+            // Oculta el submenú después de seleccionar una opción
+            document.getElementById('main-submenu').style.display = "none";
+            document.querySelector('.btn-principal').textContent = 'Explorar las Raíces de Oaxaca';
+ 
+            // Simulación de navegación (puedes reemplazar esto con redirección real)
+            alert('¡Navegando a la sección de ' + sectionName.toUpperCase() + '!');
+            
+            // Si deseas redireccionar a una página real:
+            // window.location.href = sectionName + '.html';
+        }
+ 
+ 
+        // Función para el botón de Música
+        function toggleMusic() {
+            var audioPlayer = document.getElementById('audioPlayer');
+            var musicButton = document.getElementById('musicBtn');
+            
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                musicButton.textContent = 'Pausar Música';
+            } else {
+                audioPlayer.pause();
+                musicButton.textContent = 'Reproducir Música';
+            }
+        }
+    </script>
+ 
+</body>
+</html>
