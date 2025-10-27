@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bailes Folclóricos</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #C9184A, #FF8FA3); 
+      font-family: Arial, sans-serif;
+      color: #590D22;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-top: 20px;
+    }
+
+    table {
+      background-color: #590D22;
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      color: #FFB3C1;
+    }
+
+    td {
+      vertical-align: top;
+      padding: 20px;
+    }
+
+    a.boton-regresar {
+      display: inline-block;
+      background-color: #FFF0F3;
+      color: #590D22;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin-left: 10%;
+    }
+
+    a.boton-regresar:hover {
+      background-color: #ff6e88;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bailables Folclóricos</h1>
+
+  <table>
+    <tr>
+      <td>
+        <h2>Danza de la Pluma</h2>
+        <p>La danza de la pluma es una de las danzas tradicionales más representativas de México...</p>
+      </td>
+      <td align="right">
+        <img src="danzadelapluma.jpg" alt="Foto de mi etapa en la secundaria" width="300">
+      </td>
+    </tr>
+  </table>
+
+  <div class="video-container">
+    <div id="player"></div>
+  </div>
+
+  <div>
+    <a class="boton-regresar" href="Bailes.html">Regresar a la página anterior</a>
+  </div>
+
+  <!-- Cargar la API de YouTube -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script>
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '360',
+        width: '640',
+        videoId: 'YfjnMuK0I_M',
+        events: {
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+
+    function onPlayerStateChange(event) {
+      if (event.data === YT.PlayerState.ENDED) {
+        window.location.href = 'Bailes.html'; // Redirige al terminar el video
+      }
+    }
+  </script>
+</body>
+</html>
